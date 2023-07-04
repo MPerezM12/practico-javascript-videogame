@@ -17,14 +17,13 @@ function setCanvasSize() {
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize);
     
-    elementsSize = (canvasSize / 10) - 2;
+    elementsSize = (canvasSize / 10);
 
     startGame();
 }
     
 function startGame() {
-    console.log({ canvasSize, elementsSize });
-  
+   
     game.font = elementsSize + 'px Verdana';
     game.textAlign = 'end';
 
@@ -39,3 +38,5 @@ function startGame() {
         } 
     } 
 } 
+
+console.log({ canvasSize, elementsSize });
